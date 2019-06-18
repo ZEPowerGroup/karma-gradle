@@ -50,6 +50,4 @@ pluginBundle {
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.4'
-}
+configurations.all { exclude module: 'groovy-all' }
